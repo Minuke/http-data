@@ -10,8 +10,8 @@ export class SubscribeTodoService {
 
   private readonly http = inject(HttpClient)
   
-    public getTodos(): Observable<Todo[]> {
-      return this.http.get<Todo[]>('https://jsonplaceholder.typicode.com/todos?_limit=10')
-    }
+  public getTodos(): Observable<Todo[]> {
+    return this.http.get<Todo[]>('https://jsonplaceholder.typicode.com/todos?_limit=10')
+  }
     
 }

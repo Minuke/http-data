@@ -1,6 +1,6 @@
 <h2>Recuperar datos HTTP con Resource</h2>
-<div *ngFor="let todo of todos(); let i = index">
+@for(todo of todos(); track $index) {
   <div>
     <span>{{ todo.title }}</span>
   </div>
-</div>
+}
